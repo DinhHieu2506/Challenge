@@ -1,0 +1,211 @@
+.grow-section {
+    background: linear-gradient(360deg, #f5f3e7 100%, #fff 0%);
+    width: 100%;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    height: auto; 
+}
+
+.grow-section h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1E293B;
+    margin-bottom: 24px;
+}
+
+.grow-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #475569;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.filter-colection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.filter-colection .left {
+    flex: 1;
+}
+
+.filter-colection .left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-colection .left li {
+    margin-bottom: 24px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1E293B;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+}
+
+.filter-colection .left li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    
+}
+
+.filter-colection .left li:nth-last-child(6)::before {
+    content: url(../images/search.svg);
+
+}
+.filter-colection .left li:nth-last-child(5)::before {
+    content: url(../images/shield-check.png);
+
+}
+.filter-colection .left li:nth-last-child(4)::before {
+    content: url(../images/rocket.svg);
+
+}
+.filter-colection .left li:nth-last-child(3)::before {
+    content: url(../images/screen.svg);
+
+}
+.filter-colection .left li:nth-last-child(2)::before {
+    content: url(../images/podcast.svg);
+
+}
+.filter-colection .left li:nth-last-child(1)::before {
+    content: url(../images/settings-alt.svg);
+
+}
+
+.filter-colection .left li:nth-last-child(6)::after {
+    content: url(../images/arrow-right.svg);
+
+}
+    
+
+
+.filter-colection .left a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.filter-colection .left li.active {
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: #fff;
+    line-height: 1;
+    width: auto; 
+    padding: 8px 12px; 
+}
+
+.filter-colection .right {
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-colection .right img {
+    width: 100%;
+    max-width: 950px;
+    position: relative;
+    z-index: 2;
+    border-radius: 12px;
+}
+
+.filter-colection .right::before {
+    content: url('../images/Waves.svg');
+    position: absolute;
+    right: -100px;
+    width: 100vw;
+    bottom: -200px;
+    max-height: 684px;
+}
+
+@media (max-width: 1024px) {
+  .grow-section {
+    padding: 40px 40px;
+  }
+
+  .grow-section h2 {
+    font-size: 36px;
+  }
+
+  .grow-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .filter-colection {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .filter-colection .left li {
+    font-size: 18px;
+  }
+
+  .filter-colection .right img {
+    max-width: 100%;
+  }
+
+  .filter-colection .right::before {
+    right: -60px;
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grow-section {
+    padding: 32px 16px;
+  }
+
+  .grow-section h2 {
+    font-size: 28px;
+  }
+
+  .grow-section p {
+    font-size: 14px;
+  }
+
+  .filter-colection {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .filter-colection .left li {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .filter-colection .left li::before,
+  .filter-colection .left li::after {
+    transform: scale(0.8);
+  }
+
+  .filter-colection .right {
+    justify-content: center;
+  }
+
+  .filter-colection .right img {
+    border-radius: 8px;
+  }
+
+  .filter-colection .right::before {
+    right: -40px;
+    bottom: -100px;
+  }
+}
+

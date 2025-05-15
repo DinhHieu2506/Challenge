@@ -1,0 +1,171 @@
+.video-section {
+    background-color: #f5f3e7; 
+    padding: 160px 0px;
+}
+
+
+
+.bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%; 
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+}
+
+.left {
+    width: 50%; 
+    
+}
+
+.left h2 {
+    font-size: 56px;
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 16px;
+    color: #0F172A;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.video-section .left .btn {
+    background-color: #fff;
+    color: #78350F;
+    padding: 16px 32px;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #78350F ;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bg .right {
+    width: 45%; 
+    position: relative;
+    z-index: 1;
+    left: -10px;
+    top: 10px;
+}
+
+.bg .right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+    position: relative;
+    z-index: 1;
+}
+
+.bg .left p::before {
+    content: url(../images/check.svg);
+    height: 24px;
+    width: 24px;
+}
+
+.bg .right::before {
+    content: "";
+    position: absolute;
+    top: -170px;
+    left: -130px; 
+    width: 730px; 
+    height: 625px;
+    background-image: url('../images/Deco-video.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Responsive tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .video-section {
+    padding: 100px 20px;
+  }
+
+  .bg {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .bg .left,
+  .bg .right {
+    width: 100%;
+  }
+
+  .bg .left h2 {
+    font-size: 42px;
+  }
+
+  .bg .left p {
+    justify-content: center;
+  }
+
+  .video-section .left .btn {
+    margin: 20px auto 0;
+  }
+
+  .bg .right {
+    left: 0;
+    top: 0;
+    margin-top: 30px;
+  }
+
+  .bg .right::before {
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-size: 90%;
+    background-position: center;
+  }
+}
+
+/* Responsive mobile (<= 768px) */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 60px 16px;
+  }
+
+  .bg {
+    padding: 20px;
+  }
+
+  .bg .left h2 {
+    font-size: 32px;
+  }
+
+  .bg .left p {
+    font-size: 14px;
+  }
+
+  .video-section .left .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .bg .right img {
+    border-radius: 8px;
+  }
+
+  .bg .right::before {
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+  }
+}

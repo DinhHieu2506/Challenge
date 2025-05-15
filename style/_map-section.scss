@@ -1,0 +1,127 @@
+.map-section {
+    background: linear-gradient(180deg,#78350F 100%);
+    padding: 160px 80px;
+}
+
+
+.map-section .map {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  
+}
+
+.map-section .map .img-map {
+  padding: 42px 42px ;
+  position: relative;
+  z-index: 1;
+  
+ 
+ 
+}
+
+.map-section .map .img-map::before {
+  content: url('../images/Ellipses.svg');
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  left: 250px;
+  top: 111px;
+}
+
+.map-section .map .img-map::after {
+  content: url('../images/col\ \(1\).png');
+  position: absolute;
+  z-index: 0; 
+  top: 10px;
+  left: 0px;
+  width: 256px;
+  height: 200px;
+}
+
+
+.map-section .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  z-index: 2;
+}
+
+ .map .info h1 {
+    font-size: 96px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: 800;
+}
+.map-section  .info p {
+    font-size: 56px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+    .map-section {
+        padding: 120px 40px;
+    }
+
+    .map .info h1 {
+        font-size: 72px;
+    }
+
+    .map-section .info p {
+        font-size: 42px;
+    }
+
+    .map-section .map .img-map::before {
+        left: 150px;
+        top: 100px;
+    }
+
+    .map-section .map .img-map::after {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: 100px 20px;
+    }
+
+    .map .info h1 {
+        font-size: 48px;
+    }
+
+    .map-section .info p {
+        font-size: 28px;
+    }
+
+    .map-section .map .img-map {
+        padding: 20px;
+    }
+
+    .map-section .map .img-map::before {
+        left: 80px;
+        top: 80px;
+    }
+
+    .map-section .map .img-map::after {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .map .info h1 {
+        font-size: 36px;
+    }
+
+    .map-section .info p {
+        font-size: 20px;
+    }
+}

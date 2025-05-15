@@ -1,0 +1,115 @@
+@import 'header';
+@import 'variable';
+@import 'button';
+@import 'collect-section';
+@import 'products-section';
+@import 'video-section';
+@import 'human-section';
+@import 'map-section';
+@import 'grow-section';
+@import 'articles-section';
+@import 'event-section';
+@import 'footer';
+@import 'collectmore-section';
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+ }
+
+ h2 {
+    font-size: 56px;
+    font-weight: 800;
+ }
+ 
+ *,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* Global base styles here */
+
+/* === Responsive for .map-section === */
+@media (max-width: 768px) {
+  .map-section {
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .map-section .info h1 {
+    font-size: 48px;
+  }
+
+  .map-section .info p {
+    font-size: 24px;
+  }
+
+  .map-section .map .img-map {
+    padding: 16px;
+  }
+}
+
+/* === Responsive for .products-section === */
+@media (max-width: 768px) {
+  .product-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .top-bar h2 {
+    font-size: 32px;
+  }
+
+  .top-bar .btn {
+    padding: 16px 20px;
+    font-size: 14px;
+  }
+}
+
+/* === Responsive for .human-section === */
+@media (max-width: 768px) {
+  .human-section {
+    flex-direction: column;
+    padding: 40px 16px;
+  }
+
+  .human-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .human-header h2 {
+    font-size: 32px;
+  }
+
+  .human-cards {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .human-card {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
