@@ -6,27 +6,38 @@
 
 .map-section .map {
   position: relative;
-  display: inline-block;
   width: 100%;
+  overflow: hidden;
   
 }
 
 .map-section .map .img-map {
-  padding: 42px 42px ;
+  padding-top: 36px !important;
+  padding-bottom: 48px !important;
   position: relative;
   z-index: 1;
-  
- 
- 
+  display: inline-block;
 }
 
-.map-section .map .img-map::before {
+.img-map img {
+    display: block;
+   max-width: 100%;
+    height: auto;
+   
+}
+
+.img-map .img-inner {
+    display: inline-block;
+    position: relative;
+}
+
+.map-section .map .img-map .img-inner::before {
   content: url('../images/Ellipses.svg');
   position: absolute;
-  background-size: cover;
   z-index: -1;
-  left: 250px;
+  left: 20%;
   top: 111px;
+  
 }
 
 .map-section .map .img-map::after {
@@ -64,28 +75,28 @@
     font-weight: 800;
 }
 
-@media (max-width: 1024px) {
-    .map-section {
-        padding: 120px 40px;
-    }
+@media (max-width: 1440px) {
+  .map-section {
+    padding: 140px 60px;
+  }
 
-    .map .info h1 {
-        font-size: 72px;
-    }
+  .map .info h1 {
+    font-size: 84px;
+  }
 
-    .map-section .info p {
-        font-size: 42px;
-    }
+  .map-section .info p {
+    font-size: 48px;
+  }
 
-    .map-section .map .img-map::before {
-        left: 150px;
-        top: 100px;
-    }
+  .map-section .map .img-map::after {
+    width: 220px;
+    height: auto;
+  }
 
-    .map-section .map .img-map::after {
-        width: 200px;
-        height: auto;
-    }
+  .map-section .map .img-map .img-inner::before {
+    left: 16%;
+    top: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -113,15 +124,5 @@
     .map-section .map .img-map::after {
         width: 150px;
         height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .map .info h1 {
-        font-size: 36px;
-    }
-
-    .map-section .info p {
-        font-size: 20px;
     }
 }

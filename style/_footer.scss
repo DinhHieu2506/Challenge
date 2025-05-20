@@ -1,7 +1,7 @@
 footer {
     background-color: #0F172A;
     color: white;
-    padding: 60px 0 30px;
+   
     font-family: sans-serif;
     font-size: 14px;
 }
@@ -112,6 +112,9 @@ footer .bottom-right a:hover {
 .social-icons img:hover {
     opacity: 0.7;
 }
+.folow {
+  margin-top: 20px;
+}
 
 @media (max-width: 1024px) {
   .quicklink {
@@ -125,54 +128,37 @@ footer .bottom-right a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 678px) {
   footer {
-    padding: 40px 16px 20px;
-    font-size: 13px;
-  }
-
-  .quicklink {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .quicklink .links,
-  .quicklink .app-link {
-    flex: 1 1 100%;
+    padding: 32px 16px 16px;
+    font-size: 12.5px;
   }
 
   .quicklink h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
-
+  .quicklink {
+    text-align: center;
+  }
   .quicklink ul li {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .app-link img {
-    max-width: 120px;
+    max-width: 110px;
   }
 
   footer .bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
     font-size: 12px;
   }
 
-  footer .bottom-right {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
   .social-icons {
-    gap: 12px;
+    gap: 10px;
+    justify-content: center;
   }
 
   .social-icons img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 }
-

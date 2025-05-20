@@ -1,13 +1,15 @@
 .grow-section {
     background: linear-gradient(360deg, #f5f3e7 100%, #fff 0%);
     width: 100%;
-    padding: 50px 80px;
+    padding: 50px 0;
     box-sizing: border-box;
     height: auto; 
+    position: relative;
+    z-index: 1;
 }
 
 .grow-section h2 {
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 800;
     color: #1E293B;
     margin-bottom: 24px;
@@ -28,6 +30,7 @@
     gap: 60px;
     max-width: 100%;
     box-sizing: border-box;
+    padding: 80px 0;
 }
 
 .filter-colection .left {
@@ -48,7 +51,6 @@
     gap: 12px;
     color: #1E293B;
     cursor: pointer;
-    position: relative;
     font-weight: 500;
 }
 
@@ -91,7 +93,22 @@
 
 }
     
+.grow-section .bg-grow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+  width: 100%;
+  display: inline-block;
+}
+  
 
+.grow-section .bg-grow img {
+  width: 100%;
+  height: auto;
+  display: block;
+ 
+}
 
 .filter-colection .left a {
     text-decoration: none;
@@ -119,93 +136,75 @@
 
 .filter-colection .right img {
     width: 100%;
-    max-width: 950px;
+    
     position: relative;
     z-index: 2;
     border-radius: 12px;
 }
 
-.filter-colection .right::before {
-    content: url('../images/Waves.svg');
-    position: absolute;
-    right: -100px;
-    width: 100vw;
-    bottom: -200px;
-    max-height: 684px;
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .grow-section {
-    padding: 40px 40px;
+    padding: 40px 16px;
+    text-align: center;
   }
 
   .grow-section h2 {
-    font-size: 36px;
+    font-size: 28px;
+    margin-bottom: 16px;
   }
 
   .grow-section p {
     font-size: 16px;
     margin-bottom: 40px;
+    padding: 0 10px;
   }
 
   .filter-colection {
     flex-direction: column;
     gap: 40px;
+    padding: 0;
   }
 
-  .filter-colection .left li {
-    font-size: 18px;
+  .filter-colection .left {
+    display:block; 
+     width: 100%;
+    text-align: center;
   }
 
-  .filter-colection .right img {
-    max-width: 100%;
+    .filter-colection .left li {
+    display: none; 
   }
 
-  .filter-colection .right::before {
-    right: -60px;
-    bottom: -120px;
-  }
-}
-
-@media (max-width: 768px) {
-  .grow-section {
-    padding: 32px 16px;
-  }
-
-  .grow-section h2 {
-    font-size: 28px;
-  }
-
-  .grow-section p {
-    font-size: 14px;
-  }
-
-  .filter-colection {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .filter-colection .left li {
-    font-size: 16px;
-    gap: 10px;
-  }
-
-  .filter-colection .left li::before,
-  .filter-colection .left li::after {
-    transform: scale(0.8);
+  .filter-colection .left li.active {
+    display: inline-flex; 
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .filter-colection .right {
+    width: 100%;
     justify-content: center;
+    align-items: center;
   }
 
   .filter-colection .right img {
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
-  .filter-colection .right::before {
-    right: -40px;
-    bottom: -100px;
+  .search-bar {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 32px auto;
+    padding: 12px 16px;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
   }
 }
+
+
+
 

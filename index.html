@@ -16,10 +16,19 @@
 
 <body>
     <header>
+        <div class="bg-header">
+            <img src="images/Rectangle 31.png" alt="">
+        </div>
         <div class="wrapper">
+
             <nav>
                 <div class="logo">Collers</div>
-                <ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
                     <li>
                         <a href="#">Products</a>
                     </li>
@@ -99,9 +108,12 @@
             </div>
         </div>
     </header>
+    <!---->
     <section class="products-section">
         <div class="wrapper">
-
+            <!-- <div class="bg-products">
+                <img src="images/Backlights (1).png" alt="">
+            </div> -->
             <div class="top-bar">
                 <h2>
                     The best of the best
@@ -137,6 +149,16 @@
 
                 </div>
             </div>
+            <div class="special_bg bg-green">
+            </div>
+            <div class=" special_bg bg-fuchsia">
+            </div>
+            <div class="special_bg bg-amber">
+            </div>
+            <div class="special_bg bg-blue">
+            </div>
+            <div class="special_bg bg-pink">
+            </div>
         </div>
     </section>
     <section class="video-section">
@@ -160,7 +182,8 @@
     </section>
     <!---->
     <section class="human-section">
-        <div class="wrapper">
+        <div class="wrapper" >
+            
             <div class="human-header">
                 <h2>Because they love us</h2>
                 <div class="icons">
@@ -168,67 +191,76 @@
                     <img src="images/btn-right.svg" alt="">
                 </div>
             </div>
-            <div class="human-cards">
-                <div class="human-card type1">
-                    <h2>Zoomerr</h2>
-                    <div class="human-content">
-                        <p>Non risus viverra enim, quis.
-                            Eget vitae arcu vivamus sit tellus,
-                            viverra turpis lorem.
-                            Varius a turpis urna id
-                            porttitor.</p>
+            
+            <div class="human-bg"></div>
+                 
+                <div class="human-cards">
+                    <div class="human-card type1">
+                        <h2>Zoomerr</h2>
+                        <div class="human-content">
+                            <p>Non risus viverra enim, quis.
+                                Eget vitae arcu vivamus sit tellus,
+                                viverra turpis lorem.
+                                Varius a turpis urna id
+                                porttitor.</p>
+                        </div>
+                        <div class="info">
+                            <img src="images/human 1.png" alt="">
+                            <div class="duration">
+                                <h4>Hellen Jummy</h4>
+                                <p class="position">Team Lead</p>
+
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="info">
-                        <img src="images/human 1.png" alt="">
-                        <div class="duration">
-                            <h4>Hellen Jummy</h4>
-                            <p class="position">Team Lead</p>
+                    <div class="human-card type2">
+                        <h2>SHELLS</h2>
+                        <div class="human-content">
+                            <p>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus
+                                venenatis
+                                velit semper lectus sed ornare quam nulla.</p>
+                        </div>
+                        <div class="info">
+                            <img src="images/human 2.png" alt="">
+                            <div class="duration">
+                                <h4>Hellena John</h4>
+                                <p class="position">Co-founder</p>
+
+                            </div>
 
                         </div>
 
                     </div>
-                </div>
-                <div class="human-card type2">
-                    <h2>SHELLS</h2>
-                    <div class="human-content">
-                        <p>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis
-                            velit semper lectus sed ornare quam nulla.</p>
-                    </div>
-                    <div class="info">
-                        <img src="images/human 2.png" alt="">
-                        <div class="duration">
-                            <h4>Hellena John</h4>
-                            <p class="position">Co-founder</p>
+                    <div class="human-card type3">
+                        <h2>ArtVenue</h2>
+                        <div class="human-content">
+                            <p>A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus.
+                                Pretium
+                                vehicula pretium posuere justo sed.</p>
+                        </div>
+                        <div class="info">
+                            <img src="images/human 3.png" alt="">
+                            <div class="duration">
+                                <h4>David Oshodi</h4>
+                                <p class="position">Manager</p>
+
+                            </div>
 
                         </div>
-
                     </div>
 
                 </div>
-                <div class="human-card type3">
-                    <h2>ArtVenue</h2>
-                    <div class="human-content">
-                        <p>A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium
-                            vehicula pretium posuere justo sed.</p>
-                    </div>
-                    <div class="info">
-                        <img src="images/human 3.png" alt="">
-                        <div class="duration">
-                            <h4>David Oshodi</h4>
-                            <p class="position">Manager</p>
+           
 
-                        </div>
-
-                    </div>
-                </div>
-                <div class="bg">
-                </div>
-            </div>
         </div>
     </section>
     <!---->
     <section class="grow-section">
         <div class="wrapper">
+            <div class="bg-grow">
+                <img src="images/Waves.svg" alt="">
+            </div>
             <h2>Grow your collection</h2>
             <p>Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh amet dictum pellentesque sed. Eu non
                 turpis risus odio sapien, fames sit rhoncus.
@@ -268,7 +300,9 @@
         <div class="wrapper">
             <div class="map">
                 <div class="img-map">
-                    <img src="images/chart.png" alt="">
+                    <div class="img-inner">
+                        <img src="images/chart.png" alt="">
+                    </div>
                 </div>
                 <div class="info">
                     <h1>11,658,467</h1>
@@ -278,6 +312,9 @@
     </section>
     <!---->
     <section class="articles-section">
+        <div class="bg-articles">
+            <img src="images/Frame 2.svg" alt="">
+        </div>
         <div class="wrapper">
             <div class="top-bar">
                 <h2>Articles by Collectors</h2>
@@ -294,7 +331,7 @@
                         <p>Nunc gravida semper tellus neque scelerisque eget tincidunt in.</p>
                     </div>
                     <div class="read-more">
-                        <p>Read article</p>
+                        <span>Read article</span>
                         <img src="images/Vector.svg" alt="">
                     </div>
 
@@ -343,9 +380,10 @@
     <!---->
     <section class="event-section">
         <div class="wrapper">
+
             <div>
                 <h2>Amazing events</h2>
-                  <div class="more">
+                <div class="more">
                     <p>More Articles</p>
                     <img src="images/Vector.svg" alt="">
                 </div>
@@ -359,7 +397,7 @@
                     </div>
                     <img src="images/Giay 9.png" alt="">
                     <div class="buy-ticket">
-                        <p>Buy Tickets</p>
+                        <span>Buy Tickets</span>
                         <img src="images/Vector.svg" alt="">
                     </div>
                 </div>
@@ -370,7 +408,7 @@
                     </div>
                     <img src="images/Giay 10.png" alt="">
                     <div class="buy-ticket">
-                        <p>Buy Tickets</p>
+                        <span>Buy Tickets</span>
                         <img src="images/Vector.svg" alt="">
                     </div>
                 </div>
@@ -381,7 +419,7 @@
                     </div>
                     <img src="images/Giay 11.png" alt="">
                     <div class="buy-ticket">
-                        <p>Buy Tickets</p>
+                        <span>Buy Tickets</span>
                         <img src="images/Vector.svg" alt="">
                     </div>
                 </div>
@@ -392,16 +430,22 @@
                     </div>
                     <img src="images/Giay 12.png" alt="">
                     <div class="buy-ticket">
-                        <p>Buy Tickets</p>
+                        <span>Buy Tickets</span>
                         <img src="images/Vector.svg" alt="">
                     </div>
                 </div>
             </div>
-
+            <div class="bg-event">
+                <img src="images/Frame.svg" alt="">
+            </div>
         </div>
     </section>
     <section class="collectmore-section">
+        <div class="bg-collectmore">
+            <img src="images/Backlights.svg" alt="">
+        </div>
         <div class="wrapper">
+
             <div class="bottom-bar">
                 <h2>Collect More Sneakers Today</h2>
                 <div class="btn">
@@ -478,11 +522,15 @@
                 </div>
                 <div class="app-link">
                     <h3>Get the App</h3>
+                    <div class="img-app">
                     <img src="images/App Store - Filled.png" alt="">
                     <img src="images/Google Play.png" alt="">
-
-                    <h3>Follow Us</h3>
+                    </div>
+                    <div class="folow">
+                        <h3>Follow Us</h3>
+                    </div>
                     <div class="social-icons">
+
                         <img src="images/youtube.svg" alt="YouTube">
                         <img src="images/facebook.png" alt="Facebook">
                         <img src="images/twitter.png" alt="Twitter">

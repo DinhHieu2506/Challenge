@@ -1,6 +1,8 @@
 .products-section {
     background-color: #0F172A;
-    padding: 80px;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .top-bar {
@@ -19,9 +21,9 @@
 .top-bar .btn {
     background-color: #0F172A;
     color: #fff;
-    padding: 10px 24px; /* Sửa lỗi 20x thành 10px để phù hợp giao diện */
+    padding: 20px 48px !important;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
     border: 2px solid #fff;
     text-align: center;
@@ -30,21 +32,19 @@
 .product-cards {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 48px;
     max-width: 1280px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    
 }
 
 .product-card {
-    background-color: #1A253B; /* Màu nền đậm hơn để tương phản với giao diện */
+    background-color: #1A253B; 
     border-radius: 10px;
     overflow: hidden;
     width: 394.6666564941406px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Bóng đổ nhẹ hơn */
-    position: relative;
-    z-index: 1;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); 
+    z-index: 5;
     display: flex;
     flex-direction: column;
 }
@@ -53,7 +53,7 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
-    background-color: #FFC107; /* Màu nền vàng giống giao diện */
+    background-color: #FFC107; 
 }
 
 .content-card {
@@ -79,7 +79,7 @@
     background-color: #1A253B;
     color: #fff;
     border-radius: 8px;
-    font-size: 16px; /* Giảm font-size để phù hợp nút giao diện */
+    font-size: 16px; 
     font-weight: 500;
     padding: 10px 20px;
     cursor: pointer;
@@ -92,29 +92,85 @@
 .product-card .btn::before {
     content: url(../images/shopping.svg);
     margin-right: 10px;
-    vertical-align: middle; /* Căn giữa biểu tượng với text */
-    height: 16px; /* Giảm kích thước biểu tượng */
+    vertical-align: middle; 
+    height: 16px; 
 }
 
-.product-cards::before {
-    content: url('../images/Backlights.png');
+.products-section .bg-products {
     position: absolute;
     z-index: -1;
-    top: 10px;
-    left: -20px;
+    left: 0;
+    bottom: 0 ;
+    
+  
+    
+
+}
+ .bg-green  {
+    background: var(--green-color);
+    opacity: 0.75;
+    transform: rotate(90deg);
+    border-radius: 50px;
+    right: 4%;
+    bottom: 35%;
+    aspect-ratio: 1/1;
+    z-index: 2;
+    width: 232px;
+ }
+ .bg-fuchsia {
+    background: var(--fuchsia-color);
+    opacity: 0.75;
+    transform: rotate(90deg);
+    border-radius: 30px;
+    aspect-ratio: 1/1;
+    z-index: 2;
+    bottom: 5%;
+    right: 10%;
+    width: 202px;
+ }
+ .bg-amber {
+  width: 130.945px;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+  opacity: 0.75;
+  transform: rotate(90deg);
+  background: var(--amberr-color);
+  bottom: 14%;
+  left: 55%;
+  z-index: 2;
 }
 
-.product-card:nth-child(2)::before {
-    content: '';
-    position: absolute;
-    top: -200px;
-    left: -35px;
-    width: 200px;
-    height: 200px;
-    background: url("../images/Rectangle product 2.svg") no-repeat;
-    background-size: contain;
-    z-index: -1;
+  .bg-blue {
+  width: 161.063px;
+  aspect-ratio: 1/1;
+  border-radius: 50px;
+  opacity: 0.75;
+  transform: rotate(90deg);
+  background: var(--blue-color);
+  bottom: 53%;
+  left: 34%;
+  z-index: 2;
 }
+
+  .bg-pink {
+  width: 271.094px;
+  aspect-ratio: 1/1;
+  border-radius: 50px;
+  opacity: 0.75;
+  transform: rotate(90deg);
+  background: var(--pink-color);
+  top: 58%;
+  left: 3%;
+  z-index: 2;
+ }
+
+
+ .special_bg {
+    position: absolute;
+    
+ }
+
+
 
 /* Responsive */
 @media (max-width: 1024px) {
